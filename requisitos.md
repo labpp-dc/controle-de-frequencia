@@ -29,3 +29,15 @@ Usuários para inspetores, seguranças e direção
 
 # Requisitos Não-Functionais
 
+## RNF1
+Ser uma plataforma web possível de acessar no computador e celular
+## RNF2
+Ter as cores do colégio (azul e branco)
+## RNF3
+Todo desenvolvido em JavaScript
+## RNF4
+Backend em node.js
+## RNF4
+Frontend com react
+## RNF5
+Banco de dados em sqlite
