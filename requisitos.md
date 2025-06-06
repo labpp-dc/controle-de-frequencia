@@ -23,9 +23,13 @@ Visualizar se o aluno está suspenso
 ## RF11
 Notificação p/ responsáveis e inspetores para atrasos na entrada
 ## RF12
-Soep com login de inspetor
+Soep com login de administrador
 ## RF13
-Usuários para inspetores, seguranças e direção
+Usuários para inspetores, seguranças e direção como administradores
+## RF14
+Usuários para SEORE com conta de inspetor
+## RF15
+Hyperlink na turma do aluno apresentando sua grade horária
 
 # Requisitos Não-Functionais
 
