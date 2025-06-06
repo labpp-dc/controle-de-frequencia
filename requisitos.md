@@ -38,7 +38,7 @@ Ser uma plataforma web possível de acessar no computador e celular
 ## RNF2
 Ter as cores do colégio (azul e branco)
 ## RNF3
-Todo desenvolvido em JavaScript
+Todo desenvolvido em JavaScript e TypeScript
 ## RNF4
 Backend em node.js
 ## RNF4
