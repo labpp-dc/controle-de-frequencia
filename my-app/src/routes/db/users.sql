@@ -1,0 +1,56 @@
+CREATE TABLE Estudante(
+PRIMARY KEY id INTEGER NOT NULL,
+nome TEXT NOT NULL,
+nomeSocial TEXT,
+matricula TEXT UNIQUE NOT NULL,
+FOREIGN KEY(turmas) REFERENCES Turmas(id),
+suspenso INTEGER,
+foto BLOB NOT NULL
+);
+
+CREATE TABLE Turmas(
+PRIMARY KEY id INTEGER NOT NULL,
+curso TEXT NOT NULL,
+serie INTEGER NOT NULL,
+turno TEXT NOT NULL
+);
+
+CREATE TABLE TurmaEstudante(
+PRIMARY KEY id INTEGER NOT NULL,
+FOREIGN KEY(turmas)REFERENCES Turmas(id),
+FOREIGN KEY(estudante)REFERENCES  Estudante(id)
+);
+
+CREATE TABLE Entrada(
+PRIMARY KEY id INTEGER NOT NULL,
+FOREIGN KEY(estudante) REFERENCES Estudante(id),
+data TEXT,
+almoco INTEGER
+);
+
+CREATE TABLE Saida(
+PRIMARY KEY id INTEGER NOT NULL,
+FOREIGN KEY(estudante) REFERENCES Estudante(id),
+data TEXT
+);
+
+CREATE TABLE EstudantePresentes(
+PRIMARY KEY id INTEGER NOT NULL,
+FOREIGN KEY(estudante) REFERENCES Estudante(id)
+);
+
+CREATE TABLE Advertencia(
+PRIMARY KEY id INTEGER NOT NULL,
+uniforme TEXT,
+atrasos TEXT,
+comportamento TEXT
+);
+
+CREATE TABLE Visitante(
+PRIMARY KEY id INTEGER NOT NULL,
+nome TEXT NOT NULL,
+nomeSocial TEXT,
+tipoDeCadastrante TEXT NOT NULL,
+cpf TEXT NOT NULL,
+foto BLOB
+);

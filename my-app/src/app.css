@@ -1,0 +1,7 @@
+*{
+    --main-blue-color:#06639C;
+    --main-white-color:#F9F9F9;
+}
+body{
+    background-color: var(--main-blue-color);
+}   

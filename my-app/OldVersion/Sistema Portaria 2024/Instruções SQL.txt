@@ -1,0 +1,194 @@
+//Para abrir o sistema portaria é necessário segurar a tecla SHIFT+ENTER. Pode ser que em algumas vezes não abra o Access direto. Insite que vai.
+
+//Alterando o ano letivo
+update turma 
+set ano_letivo = 2024
+where ano_letivo=2023;
+
+
+//Alterando as turmas/séries
+Update Enturmados
+Set codturma = 65		
+Where codturma = 57 or codturma=54 or codturma=52 or codturma=49 or codturma=44 or codturma=45 or codturma=46
+
+//Alunos da TADM201 para a TADM301
+Update Enturmados
+Set codturma = 57		
+Where codturma = 56
+
+//Alunos da TADM101 para a TADM201
+Update Enturmados
+Set codturma = 56		
+Where codturma = 55
+
+//Alunos da AADM101 para a AADM201
+Update Enturmados
+Set codturma = 54		
+Where codturma = 53
+
+//Alunos da DS202 para a DS302
+Update Enturmados
+Set codturma = 49		
+Where codturma = 48
+
+//Alunos da DS102 para a DS202
+Update Enturmados
+Set codturma = 48		
+Where codturma = 47
+
+//Alunos da AD202 para a AD302
+Update Enturmados
+Set codturma = 52		
+Where codturma = 51
+
+//Alunos da AD102 para a AD202
+Update Enturmados
+Set codturma = 51		
+Where codturma = 50
+
+//Alunos da 1201 para a 1301
+Update Enturmados
+Set codturma = 44		
+Where codturma = 41
+
+//Alunos da 1203 para a 1303
+Update Enturmados
+Set codturma = 45		
+Where codturma = 42
+
+//Alunos da 1205 para a 1305
+Update Enturmados
+Set codturma = 46		
+Where codturma = 43
+
+//Atualizando enturmamento para a 1201
+Update Enturmados
+Set codturma=41		
+Where matricula in ("M02601221","M10501742","M02301254","M02701276","M02101306","M02401426","M02101252","M02401264","M02001278","M02101315","M02301326","M02401273","M01800476","M02701564","M02701429","M02801331","M02001287","M07501265","M02701339","M02801421","M02001260","M02301191","M02201064","M02801277","M02501256","M02801286","M02101261","M02001062","M02501337","M02201046","M02101270","M02101423","M02201280","M02601356","M01000387","M02001251","M02101333","M02401255")
+
+//Atualizando enturmamento para a 1203
+Update Enturmados
+Set codturma=42		
+Where matricula in ("M02001269","M02601275","M04800278","M02501427","M02101279","M02701258","M02201262","M02701114","91201314","M02801250","M02801565","M02601104","M02601284","M02001332","M02001422","M13100631","M02001107","M02001224","M02201424","81104513","M02401282","M02301425","M02601185","M02301281","M02801268","M02501274","M02801259","M02700979","M02601266","M01400229","M02601428","M02601149","M02201253","M02101162","M02201361","M02201271","M02301119","81115613","M02601059")
+
+//Atualizando enturmamento para 1301
+Update Enturmados
+Set codturma=44
+Where matricula in ("M12000351","M02701222","M02501310","M02801115","M02401147","M02401309","M02701321","M02101117","M02401192","M02501112","M02001116","M02501328","M02301218","M12300174","81115612","M02601329","M12100406","M02101135","M02101063")
+
+//Atualizando enturmados para 1303
+Update Enturmados
+Set codturma=45
+Where matricula in ("M02201100","81100512","M02301308","M02201109","M02501148","M02001134","M02501193","M02701150","M02401102","M02001152","M02601320","M02701195","M02401111","M02301200","M02801223","M02301344","M02601311","M02701105","M02801106","M02201199","M02601194","M02101225")
+
+//Atualização enturmados para 1305
+Update Enturmados
+Set codturma=46
+Where matricula in ("M02001188","M02200668","M02401219","M02301065","M02301146","M02201001","M02201118","M02201316","M02301110","M02001125","M02201145","M02501184","M02801313","M02501103","M02001197","81110312","81112612","M02701186","M02801187","M02701312","M02301101","M02001314","M02201190","M02101189")
+
+//Atualização enturmados para AD102
+Update Enturmados
+Set codturma=50
+Where matricula in ("M02101477","M02701483","M02501544","M02401543","M02001539","M02801538","M02001233","M02301479","M02801484","M02601482","M02201541","M02300984","M02401480","M02001476","M02301542","M15300633","M02501481","M02101540","M02201478")
+
+//Atualizando enturmados para AD202
+Update Enturmados
+Set codturma=51
+Where matricula in ("M02601086","M02001359","M02501238","M02701231","M02401237","M02401345","M02501355","M02601230","
+M02601239","M02101234","M02301083","M02501085","M02801232","M02201235","M02301137")
+
+
+//Atualização enturmados para AD302
+Update Enturmados
+Set codturma=52
+Where matricula in ("M02801079","M02801169","M02201082","M02701213","M02701087","M02001170","M02601212","M02501139","M02101081","M02801214","M02101216","M02401084","M02801088","M02001215","M02701141")
+
+//Atualizando para a DS102
+Update Enturmados
+Set codturma=47
+Where matricula in ("M02401435", "M02801439", "M02001431", "81102014", "M02001440", "M02101567", "M02801322", "M02701357", "M02601437", "M02101432", "M02601176", "M02101441", "M02401444", "M02501436", "M02501445", "M02301434", "M02701348", "M02801097", "M02501247", "M02001566", "M02301443", "M02101099", "M02201442", "M02001323", "M02801430", "M12600258", "M02701438")
+
+//Atualizando para DS202
+Update Enturmados
+Set codturma=48
+Where matricula in ("M02101243","M02401354","M02501094","M02701168","M02301245","M02201325","M02101324","M13200659","M02701249","M02301164","M02601347","M02601248","M02401183","M02201244","M02401246","61101113","M02801358","M02301353","M12600348","M02001242")
+
+//Atualizando para DS302
+Update Enturmados
+Set codturma=49
+Where matricula in ("M02201055","M02201217","M02301092","M02601095","M02001143","M02001089","M02401165","M02601167","M02701096","M02501166","M02801142","M02401093","M02201163","M02001098","M02101144","M04000891","M02201091")
+	//Atualizando para AADM201
+Update Enturmados
+Set codturma=54
+Where matricula in ("M02801295","M02801340","M02001341","M02701294","M02101297","M02801304","M02400868","M02001296","M02101288","M02601293","M02301290")
+
+//Atualizando para TADM201
+Update Enturmados
+Set codturma=56
+Where matricula in ("M02701303","M02301299","M02601302","M02700718","M02001305","M02501301")
+
+//Atualizando para TADM301
+Update Enturmados
+Set codturma=57
+Where matricula in ("M02801529", "M02001530", "M02201154","M02101531", "M02201532", "M02200911", "M02301533", "M02800926", "M02401156", "M02401534", "M02700925", "M02501535", "M02601536", "M02701537", "M02701078", "M02501076", "M02400895")
+
+// Apagando alunos não enturmados 
+delete from enturmado where codturma=65
+
+//mostrar os alunos por turma
+select Nome,codturma from alunos , enturmados 
+where alunos.matricula = enturmados.matricula and (codturma = 41 or codturma=42)
+order by codturma,nome
+
+
+select * from enturmados where matricula = "M10501742"
+
+select Nome, matricula from alunos
+where alunos.matricula = "M02701429"
+
+
+//Mostrar alunos sem turma - possivelmente os que não estão com matrícula ativa
+select alunos.matricula, nome, codturma from alunos, enturmados
+where codturma=65 and enturmados.matricula=alunos.matricula
+
+
+// Mostrar alunos da 1101 - codTurma 39
+select alunos.matricula, nome, codturma from alunos, enturmados
+where enturmados.codturma=39  and enturmados.matricula=alunos.matricula
+order by nome
+
+// Mostrar alunos da 1103 - codTurma 40
+select alunos.matricula, nome, codturma from alunos, enturmados
+where enturmados.codturma=40 and enturmados.matricula=alunos.matricula
+order by nome
+
+// Mostrar alunos da 1105 - codTurma 63
+select alunos.matricula, nome, codturma from alunos, enturmados
+where enturmados.codturma=63 and enturmados.matricula=alunos.matricula
+order by nome
+
+// Mostrar alunos da 1107 - codTurma 64
+select alunos.matricula, nome, codturma from alunos, enturmados
+where enturmados.codturma=64 and enturmados.matricula=alunos.matricula
+order by nome
+
+
+//Procurar o enturmamento de um aluno pela matrícula
+SELECT * from enturmados
+where matricula="M02801151"
+
+//Pesquisar os dados de um aluno, pelo nome dele
+select * from alunos where nome like "AMANDA*LUNA*"
+
+//Por Turma - Datas de Frequeência dos Alunos por Período
+SELECT ALUNOS.nome, ACESSO.data
+FROM (ALUNOS INNER JOIN ACESSO ON ALUNOS.MATRICULA = ACESSO.MATRÍCULA) INNER JOIN (TURMA INNER JOIN ENTURMADOS ON TURMA.CODTURMA = ENTURMADOS.CODTURMA) ON ALUNOS.MATRICULA = ENTURMADOS.MATRICULA
+WHERE TURMA.turma=[Qual Turma?] and ACESSO.data Between [DataInicio] And [DataFim]
+ORDER BY ALUNOS.nome, Acesso.Data;
+
+
+//Por Turma - Qtd Frequência dos alunos por Período
+SELECT ALUNOS.nome AS Nome, Count(ACESSO.data) AS QtdPresenca
+FROM (ALUNOS INNER JOIN ACESSO ON ALUNOS.MATRICULA = ACESSO.MATRÍCULA) INNER JOIN (TURMA INNER JOIN ENTURMADOS ON TURMA.CODTURMA = ENTURMADOS.CODTURMA) ON ALUNOS.MATRICULA = ENTURMADOS.MATRICULA
+WHERE TURMA.turma=[Qual Turma?] and ACESSO.data Between [DataInicio] And [DataFim]
+GROUP BY ALUNOS.nome;
