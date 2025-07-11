@@ -1,7 +1,24 @@
 *{
     --main-blue-color:#06639C;
+    --secondary-blue-color:#6AECF0;
     --main-white-color:#F9F9F9;
+    --secondary-white-color:#d9d9d9;
+    --main-red-color:#d74848;
+    --secondary-red-color:#fc7373;
+    --main-yellow--color:#;
 }
 body{
-    background-color: var(--main-blue-color);
+    background-color: var(--main-white-color);
 }   
+
+.bgCP2Blue1{
+    background-color: var(--main-blue-color)
+}
+.bgCP2White1{
+    background-color: var(--main-white-color)
+}
+.bgCP2White2{
+    background-color: var(--secondary-white-color)
+}
+
+@import "tailwindcss";
