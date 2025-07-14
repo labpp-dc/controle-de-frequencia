@@ -34,10 +34,6 @@ FOREIGN KEY(estudante) REFERENCES Estudante(id),
 data TEXT
 );
 
-CREATE TABLE EstudantePresentes(
-PRIMARY KEY id INTEGER NOT NULL,
-FOREIGN KEY(estudante) REFERENCES Estudante(id)
-);
 
 CREATE TABLE Advertencia(
 PRIMARY KEY id INTEGER NOT NULL,
