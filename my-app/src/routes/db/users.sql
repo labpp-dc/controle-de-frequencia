@@ -22,6 +22,11 @@ FOREIGN KEY(turmas)REFERENCES Turmas(id),
 FOREIGN KEY(estudante)REFERENCES  Estudante(id)
 );
 
+CREATE TABLE AnoLetivo(
+PRIMARY KEY id INTEGER NOT NULL,
+Ano TEXT
+);
+
 CREATE TABLE Entrada(
 PRIMARY KEY id INTEGER NOT NULL,
 FOREIGN KEY(estudante) REFERENCES Estudante(id),
@@ -41,12 +46,6 @@ PRIMARY KEY id INTEGER NOT NULL,
 uniforme TEXT,
 atrasos TEXT,
 comportamento TEXT
-);
-
-
-CREATE TABLE AnoLetivo(
-PRIMARY KEY id INTEGER NOT NULL,
-Ano TEXT
 );
 
 
