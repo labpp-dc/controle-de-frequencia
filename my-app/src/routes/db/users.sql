@@ -12,7 +12,7 @@ CREATE TABLE Turmas(
 PRIMARY KEY id INTEGER NOT NULL,
 curso TEXT NOT NULL,
 serie INTEGER NOT NULL,
-turno TEXT NOT NULL
+turno TEXT NOT NULL, FOREIGN KEY(anoLetivo) REFERENCES AnoLetivo(id)
 );
 
 CREATE TABLE TurmaEstudante(
@@ -35,12 +35,19 @@ data TEXT
 );
 
 
-CREATE TABLE Advertencia(
+CREATE TABLE Ocorrencias(
 PRIMARY KEY id INTEGER NOT NULL,
 uniforme TEXT,
 atrasos TEXT,
 comportamento TEXT
 );
+
+
+CREATE TABLE AnoLetivo(
+PRIMARY KEY id INTEGER NOT NULL,
+Ano TEXT
+);
+
 
 CREATE TABLE Visitante(
 PRIMARY KEY id INTEGER NOT NULL,
