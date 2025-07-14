@@ -12,7 +12,8 @@ CREATE TABLE Turmas(
 PRIMARY KEY id INTEGER NOT NULL,
 curso TEXT NOT NULL,
 serie INTEGER NOT NULL,
-turno TEXT NOT NULL, FOREIGN KEY(anoLetivo) REFERENCES AnoLetivo(id)
+turno TEXT NOT NULL, 
+FOREIGN KEY(anoLetivo) REFERENCES AnoLetivo(id)
 );
 
 CREATE TABLE TurmaEstudante(
